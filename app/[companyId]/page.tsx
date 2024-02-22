@@ -11,7 +11,7 @@ export default async function CompanyPage({ params }: Props) {
   return (
     <main>
       <h1>{data?.companies_by_pk?.name}</h1>
-      <h1>{data?.companies_by_pk?.ceo}</h1>
+      <h2>{data?.companies_by_pk?.ceo}</h2>
       <ul>
         {data?.companies_by_pk?.products.map((product) => (
           <li key={product.name}>

@@ -9,6 +9,8 @@ const CompaniesQuery = graphql(`
       ceo
       founded_year
       type
+      created_at
+      updated_at
     }
   }
 `);

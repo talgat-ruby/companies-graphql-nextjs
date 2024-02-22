@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getCompanies } from "@/graphql/";
+import { AddCompanyButton } from "@/components";
 
 export default async function Home() {
   const { data } = await getCompanies();
@@ -14,6 +15,7 @@ export default async function Home() {
           <span>Type: {company.type}</span>
         </li>
       ))}
+      <AddCompanyButton />
     </main>
   );
 }
